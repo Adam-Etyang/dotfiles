@@ -43,7 +43,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot' "syntax highlighting
 Plug 'itchyny/lightline.vim' "status line
 Plug 'preservim/nerdtree' "Side file expandtab
-Plug 'junegunn/fzf.vim' "Fuzzy finder
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }  " installs fzf binary
+Plug 'junegunn/fzf.vim'"
+
 Plug 'tpope/vim-fugitive' "Git integration
 Plug 'Yggdroot/indentLine' "visual indents
 Plug 'jiangmiao/auto-pairs'  "Auto close brackets
