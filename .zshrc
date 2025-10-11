@@ -72,6 +72,10 @@ export PATH="$(awk -v RS=: '!a[$1]++{printf("%s%s",$1,RT)}' <<<"$PATH")"
 # Aliases 
 alias ll='ls -lah'
 alias gs='git status -sb'
+alias gp='git push'
+alias ga='git add .'
+alias gc='git commit -m'
+
 
 
 export PATH="$(echo "$PATH" | sed 's/\/opt\/homebrew/\n\/opt\/homebrew/g' | tr '\n' ':' | sed 's/::/:/g' | sed 's/:$//')"
