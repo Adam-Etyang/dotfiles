@@ -1,0 +1,47 @@
+theme = "Catppuccin Mocha"
+font-size = 19
+#background-blur-radius = 20
+mouse-hide-while-typing = true
+window-decoration = true
+background-opacity = 0.99
+# Balance extra padding in viewport
+window-padding-balance = true
+# Disable blinking cursor
+cursor-style-blink = false
+
+
+# Treat Option key as Alt on macOS
+macos-option-as-alt = true
+# Use non-native fullscreen (fast; no tab support)
+macos-non-native-fullscreen = true
+# Use a tab-integrated titlebar
+macos-titlebar-style = tabs
+# Do not restore window state on startup
+window-save-state = never
+
+copy-on-select = clipboard
+focus-follows-mouse = true
+font-thicken = true
+
+# --- Shell integration ---
+# Enable zsh shell integration
+shell-integration = zsh
+# Disable shell integration cursor changes
+shell-integration-features = no-cursor
+
+
+
+# --- Keybindings for cursor movement ---
+# Alt-key bindings (beginning/end of line)
+keybind = alt+h=text:\x01
+keybind = alt+l=text:\x05
+
+# Cmd-key bindings (beginning/end of line)
+keybind = cmd+left=text:\x01
+keybind = cmd+right=text:\x05
+
+# Alt-arrow bindings (word movements)
+keybind = alt+left=esc:b
+keybind = alt+right=esc:f
+
+
