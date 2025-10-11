@@ -51,5 +51,9 @@ Plug 'tpope/vim-fugitive' "Git integration
 Plug 'Yggdroot/indentLine' "visual indents
 Plug 'jiangmiao/auto-pairs'  "Auto close brackets
 
+Plug 'catppuccin/vim', { 'as': 'catppuccin'   } " Theme
 call plug#end()
+set termguicolors
+colorscheme catppuccin_mocha
+let g:lightline = { 'colorscheme': 'ayu_dark'  }
 
